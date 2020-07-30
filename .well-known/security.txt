@@ -1,0 +1,3 @@
+Contact: mailto:nickwasused.services@protonmail.com
+Encryption: https://nickwasused.de/pgp-key.txt
+Preferred-Languages: de, en
