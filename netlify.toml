@@ -4,7 +4,7 @@
     Content-Security-Policy = "default-src 'self' 'unsafe-inline' wss://snowflake.freehaven.net https://snowflake-broker.freehaven.net/proxy; script-src 'self' 'unsafe-inline' https://ajax.cloudflare.com https://static.cloudflareinsights.com https://cdn.jsdelivr.net/gh/nickwasused/"
     Strict-Transport-Security = "max-age=1000; includeSubDomains; preload"
     X-Frame-Options = "DENY"
-	"-Xss-Protection = "1; mode=block",
+	X-Xss-Protection = "1; mode=block",
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Feature-Policy = "microphone 'none'; geolocation 'none'"
