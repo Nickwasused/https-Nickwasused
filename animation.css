@@ -1,0 +1,61 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+@charset "utf-8";
+
+.ncontent1,
+.ncontent3 {
+	animation         : ncontent1 5s infinite linear;
+}
+
+.ncontent2,
+.ncontent4 {
+	animation         : ncontent2 5s infinite linear;
+}
+
+@keyframes ncontent1 {
+  14.29% {
+    background-color: #1abc9c;
+  }
+  28.6% {
+    background-color: #18b495;
+  }
+  42.9% {
+    background-color: #159d82;
+  }
+  57.15% {
+    background-color: #12876f;
+  }
+  71.44% {
+    background-color: #159d82;
+  }
+  85.73% {
+    background-color: #18b495;
+  }
+  100% {
+    background-color: #1abc9c;
+  }
+}
+
+@keyframes ncontent2 {
+  14.29% {
+    background-color: #821bdc;
+  }
+  28.6% {
+    background-color: #7919cc;
+  }
+  42.9% {
+    background-color: #6b16b6;
+  }
+  57.15% {
+    background-color: #5e149f;
+  }
+  71.44% {
+    background-color: #6b16b6;
+  }
+  85.73% {
+    background-color: #7919cc;
+  }
+  100% {
+    background-color: #821bdc;
+  }
+}
