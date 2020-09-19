@@ -9,4 +9,6 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 	Expect-CT = "enforce, max-age=30"
     Feature-Policy = "microphone 'none'; geolocation 'none'"
-	Alt-Svc = 'h2="nickwasused.de:443", h2="nickwasused.cf:443", h2="nickwasused.ml:443", h2="nickwasused.ma:443", h2="nickwasused.gq:443", h2="nickwasused.tk:443", h2="nickwasused.netlify.app:443"'
+	Accept-Charset = "utf-8"
+	Server = ""
+	Alt-Svc = 'h2="nickwasused.de:443", h2="nickwasused.tk:443", h2="nickwasused.gq:443", h2="nickwasused.ga:443", h2="nickwasused.ml:443", h2="nickwasused.cf:443", h2="nickwasused.netlify.app:443"'
