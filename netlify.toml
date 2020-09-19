@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' 'unsafe-inline' wss://snowflake.freehaven.net https://snowflake-broker.freehaven.net/proxy https://*.cloudfront.net; script-src 'self' 'unsafe-inline' https://*.cloudfront.net https://cdn.jsdelivr.net/gh/nickwasused/"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app wss://snowflake.freehaven.net https://snowflake-broker.freehaven.net/proxy https://*.cloudfront.net; script-src 'self' 'unsafe-inline' https://*.cloudfront.net https://cdn.jsdelivr.net/gh/nickwasused/"
     Strict-Transport-Security = "max-age=2592000; includeSubDomains; preload"
     X-Frame-Options = "DENY"
 	X-Xss-Protection = "1; mode=block"
@@ -11,4 +11,4 @@
     Feature-Policy = "microphone 'none'; geolocation 'none'"
 	Accept-Charset = "utf-8"
 	Server = ""
-	Alt-Svc = 'h2="nickwasused.de:443", h2="nickwasused.tk:443", h2="nickwasused.gq:443", h2="nickwasused.ga:443", h2="nickwasused.ml:443", h2="nickwasused.cf:443", h2="nickwasused.netlify.app:443"'
+	Alt-Svc = 'h2="nickwasused.de:443", h2="nickwasused.tk:443", h2="nickwasused.gq:443", h2="nickwasused.ga:443", h2="nickwasused.ml:443", h2="nickwasused.cf:443", h2="nickwasused.netlify.app:443", h2="nickwasusedde.netlify.app:443"'
