@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' 'unsafe-inline' data: nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app wss://snowflake.freehaven.net https://snowflake-broker.freehaven.net/proxy https://*.cloudfront.net; script-src 'self' 'unsafe-inline' https://*.cloudfront.net https://cdn.jsdelivr.net/gh/nickwasused/"
+    Content-Security-Policy = "upgrade-insecure-requests; default-src 'self' 'unsafe-inline' data: nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app wss://snowflake.freehaven.net https://snowflake-broker.freehaven.net/proxy https://*.cloudfront.net; script-src 'self' 'unsafe-inline' https://*.cloudfront.net https://cdn.jsdelivr.net/gh/nickwasused/"
     Strict-Transport-Security = "max-age=2592000; includeSubDomains; preload"
     X-Frame-Options = "DENY"
 	X-Xss-Protection = "1; mode=block"
