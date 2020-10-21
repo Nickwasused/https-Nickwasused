@@ -61,22 +61,32 @@
 			<h1>My Portfolio</h1>
 			<div class="grid2x2">
 				<div class="box box1">
-					<img src="img/png/place.png" alt="placeholder">
+					<img data-src="img/svg/github.svg" alt="placeholder" loading="lazy">
 					<a href="https://github.com/Nickwasused" target="_blank" rel="noopener noreferrer"><p>Github | Coding</p></a>
 				</div>
 				<div class="box bo2">
-					<img src="img/png/place.png" alt="placeholder">
+					<img data-src="img/svg/youtube.svg" alt="placeholder" loading="lazy">
 					<a href="https://www.youtube.com/channel/UCsRLiy6MV4udCvbbcKBl5-g" target="_blank" rel="noopener noreferrer"><p>Youtube | Translating</p></a>
 				</div>
 				<div class="box box3">
-					<img src="img/png/place.png" alt="placeholder">
+					<img data-src="img/svg/crowdin.svg" alt="placeholder" loading="lazy">
 					<a href="https://crowdin.com/profile/n1ckw4sused" target="_blank" rel="noopener noreferrer"><p>Crowdin | Translating</p></a>
 				</div>
 				<div class="box box4">
-					<img src="img/png/place.png" alt="placeholder">
+					<img data-src="img/svg/steam.svg" alt="placeholder" loading="lazy">
 					<a href="https://github.com/Nickwasused/FreeGamesonSteam" target="_blank" rel="noopener noreferrer"><p>FreeGamesonSteam</p></a>
 				</div>
 			</div>
+			<script>
+				if ('loading' in HTMLImageElement.prototype) {
+					const imgElements = document.querySelectorAll('img[loading="lazy"]');
+					imgElements.forEach(img => { img.src = img.dataset.src; });
+				} else {
+					const lazyScript = document.createElement('script');
+					lazyScript .src = 'js/picture.js';
+					document.body.appendChild(lazyScript);
+				}
+			</script>
 		</div>
 		<div class="ncontent3">
 			<a id="about"></a>
@@ -119,6 +129,5 @@
 		<p>&copy; Nickwasused 2020</p>
 		<p>Licence: <a href="LICENCE" target="_blank" rel="noopener noreferrer">here!</a></p>
 		<link type="text/css" rel="stylesheet" href="complete.css">
-		<script async defer src="js/picture.js"></script>
 	</footer>
 </html>
