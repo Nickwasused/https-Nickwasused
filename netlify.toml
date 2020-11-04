@@ -1,9 +1,4 @@
 [[headers]]
-  for = "*.avif"
-  [headers.values]
-    Content-Type = "image/avif"
-    Content-Disposition = "inline"
-
   for = "/*"
   [headers.values]
     Content-Security-Policy = "upgrade-insecure-requests; default-src 'self' data: nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; script-src 'self' 'unsafe-inline' https://*.cloudfront.net"
@@ -17,3 +12,9 @@
 	Accept-Charset = "utf-8"
 	Server = ""
 	Alt-Svc = 'h2="nickwasused.de:443", h2="nickwasused.tk:443", h2="nickwasused.gq:443", h2="nickwasused.ga:443", h2="nickwasused.ml:443", h2="nickwasused.cf:443", h2="nickwasused.netlify.app:443", h2="nickwasusedde.netlify.app:443"'
+	
+[[headers]]
+  for = "*.avif"
+  [headers.values]
+    Content-Type = "image/avif"
+    Content-Disposition = "inline"
