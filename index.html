@@ -41,9 +41,6 @@
 				<a href="#portfolio">My Portfolio</a>
 			</li>
 			<li>
-				<a href="#about">About</a>
-			</li>
-			<li>
 				<a href="#contact">Contact</a>
 			</li>
 		</ul> 
@@ -61,43 +58,40 @@
 			<h1>My Portfolio</h1>
 			<div class="grid2x2">
 				<div class="box box1">
-					<img data-src="img/svg/github.svg" alt="placeholder" loading="lazy">
+					<picture>
+						<source srcset="img/webp/github.webp" type="image/webp">
+						<source srcset="img/svg/github.svg" type="image/svg">
+						<img src="img/png/github.png" alt="Github">
+					</picture>
 					<a href="https://github.com/Nickwasused" target="_blank" rel="noopener noreferrer"><p>Github | Coding</p></a>
 				</div>
 				<div class="box bo2">
-					<img data-src="img/svg/youtube.svg" alt="placeholder" loading="lazy">
+					<picture>
+						<source srcset="img/webp/youtube.webp" type="image/webp">
+						<source srcset="img/svg/youtube.svg" type="image/svg">
+						<img src="img/png/youtube.png" alt="youtube">
+					</picture>
 					<a href="https://www.youtube.com/channel/UCsRLiy6MV4udCvbbcKBl5-g" target="_blank" rel="noopener noreferrer"><p>Youtube | Translating</p></a>
 				</div>
 				<div class="box box3">
-					<img data-src="img/svg/crowdin.svg" alt="placeholder" loading="lazy">
+					<picture>
+						<source srcset="img/webp/crowdin.webp" type="image/webp">
+						<source srcset="img/svg/crowdin.svg" type="image/svg">
+						<img src="img/png/crowdin.png" alt="crowdin">
+					</picture>
 					<a href="https://crowdin.com/profile/n1ckw4sused" target="_blank" rel="noopener noreferrer"><p>Crowdin | Translating</p></a>
 				</div>
 				<div class="box box4">
-					<img data-src="img/svg/steam.svg" alt="placeholder" loading="lazy">
+					<picture>
+						<source srcset="img/webp/steam.webp" type="image/webp">
+						<source srcset="img/svg/steam.svg" type="image/svg">
+						<img src="img/png/steam.png" alt="steam">
+					</picture>
 					<a href="https://github.com/Nickwasused/FreeGamesonSteam" target="_blank" rel="noopener noreferrer"><p>FreeGamesonSteam</p></a>
 				</div>
 			</div>
-			<script>
-				if ('loading' in HTMLImageElement.prototype) {
-					const imgElements = document.querySelectorAll('img[loading="lazy"]');
-					imgElements.forEach(img => { img.src = img.dataset.src; });
-				} else {
-					const lazyScript = document.createElement('script');
-					lazyScript .src = 'js/picture.js';
-					document.body.appendChild(lazyScript);
-				}
-			</script>
 		</div>
 		<div class="ncontent3">
-			<a id="about"></a>
-			<h1>Facts <span class="ac">about</span> Me</h1>
-			<section>
-				<p>Name<span class="ac">:</span> Nick</p>
-				<p><span class="ac">Age</span>: 18</p>
-				<p>Country: <span class="ac">Germany</span></p>
-			</section>
-		</div>
-		<div class="ncontent4">
 			<a id="contact"></a>
 			<h1>Contact</h1>
 			<p>Email (Long response time!): <a href="mailto:nickwasused.social@protonmail.com">Here!</a></p>

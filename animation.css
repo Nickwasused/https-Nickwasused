@@ -15,8 +15,7 @@
 	        animation         : ncontent1 5s infinite linear;
 }
 
-.ncontent2,
-.ncontent4 {
+.ncontent2 {
 	-webkit-animation         : ncontent2 5s infinite linear;
 	   -moz-animation         : ncontent2 5s infinite linear;
 	     -o-animation         : ncontent2 5s infinite linear;

@@ -1,4 +1,9 @@
 [[headers]]
+  for = "*.avif"
+  [headers.values]
+    Content-Type = "image/avif"
+    Content-Disposition = "inline"
+
   for = "/*"
   [headers.values]
     Content-Security-Policy = "upgrade-insecure-requests; default-src 'self' data: nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; script-src 'self' 'unsafe-inline' https://*.cloudfront.net"
