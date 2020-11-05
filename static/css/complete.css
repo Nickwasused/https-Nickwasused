@@ -5,10 +5,10 @@
 /* Custom Roboto Font */
 @font-face {
     font-family  : 'Roboto-com';
-    src: url('webfonts/Roboto-Regular.woff2') format('woff2'),
-		 url('webfonts/Roboto-Regular.woff') format('woff'),
-		 url('webfonts/Roboto-Regular.ttf') format('truetype'),
-         url('webfonts/Roboto-Regular.svg#robotoregular') format('svg');
+    src: url('../webfonts/Roboto-Regular.woff2') format('woff2'),
+		 url('../webfonts/Roboto-Regular.woff') format('woff'),
+		 url('../webfonts/Roboto-Regular.ttf') format('truetype'),
+         url('../webfonts/Roboto-Regular.svg#robotoregular') format('svg');
     font-weight   : normal;
     font-style    : normal;
 	font-display  : swap;
@@ -65,11 +65,6 @@ li a:hover {
 ::selection {
 	color      : white;
 	background : #333;
-}
-
-.pgp {
-	font-size   : 10px;
-	white-space : wrap;
 }
 
 img {
