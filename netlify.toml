@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "upgrade-insecure-requests; default-src 'none'; script-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; style-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; frame-ancestors 'self' https://*.cloudfront.net; base-uri 'none'; form-action 'none';"
+    Content-Security-Policy = "upgrade-insecure-requests; default-src 'none'; script-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; style-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; frame-ancestors 'self' https://*.cloudfront.net; base-uri 'none'; form-action 'none'; img-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net"
     Strict-Transport-Security = "max-age=15768000; includeSubDomains; preload"
     X-Frame-Options = "DENY"
 	X-Xss-Protection = "1; mode=block"
