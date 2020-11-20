@@ -10,7 +10,6 @@
 	Expect-CT = "enforce, max-age=30"
     Feature-Policy = "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen 'none'; fullscreen 'none'; gyroscope 'none'; layout-animations 'none'; legacy-image-formats 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; oversized-images 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-get 'none'; sync-xhr 'none'; usb 'none'; vr 'none'; wake-lock 'none'; screen-wake-lock 'none'; web-share 'none'; xr-spatial-tracking 'none';"
 	Accept-Charset = "utf-8"
-	Server = ""
 	Alt-Svc = 'h2=":443", h2="nickwasused.netlify.app:443"'
 	
 [[headers]]
