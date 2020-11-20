@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "upgrade-insecure-requests; default-src 'none' 'strict-dynamic' data:; script-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; style-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; frame-ancestors 'self' https://*.cloudfront.net; base-uri 'none'; form-action 'none'; img-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net; font-src 'self' nickwasused.de nickwasused.tk nickwasused.gq nickwasused.ga nickwasused.ml nickwasused.cf nickwasused.netlify.app nickwasusedde.netlify.app https://*.cloudfront.net"
+    Content-Security-Policy = "upgrade-insecure-requests; default-src 'none' data: nickwasused.netlify.app https://*.cloudfront.net; script-src 'self' 'strict-dynamic'; style-src 'self' 'inline'; frame-ancestors 'self'; base-uri 'none'; form-action 'none'; img-src 'self'; font-src 'self'; sandbox ;"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Frame-Options = "DENY"
 	X-Xss-Protection = "1; mode=block"
@@ -11,7 +11,7 @@
     Feature-Policy = "microphone 'none'; geolocation 'none'"
 	Accept-Charset = "utf-8"
 	Server = ""
-	Alt-Svc = 'h2="nickwasused.de:443", h2="nickwasused.tk:443", h2="nickwasused.gq:443", h2="nickwasused.ga:443", h2="nickwasused.ml:443", h2="nickwasused.cf:443", h2="nickwasused.netlify.app:443", h2="nickwasusedde.netlify.app:443"'
+	Alt-Svc = 'h2=":443", h2="nickwasused.netlify.app:443"'
 	
 [[headers]]
   for = "*.avif"
