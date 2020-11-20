@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "upgrade-insecure-requests; default-src 'none' data: nickwasused.netlify.app https://*.cloudfront.net; script-src 'self'; style-src 'self' 'unsafe-inline' https://*.cloudfront.net; frame-ancestors 'self'; base-uri 'none'; form-action 'none'; img-src 'self' https://*.cloudfront.net; font-src 'self'; sandbox ;"
+    Content-Security-Policy = "upgrade-insecure-requests; default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://*.cloudfront.net; frame-ancestors 'self'; base-uri 'none'; form-action 'none'; img-src 'self' https://*.cloudfront.net; font-src 'self'; sandbox ; block-all-mixed-content; upgrade-insecure-requests"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Frame-Options = "DENY"
 	X-Xss-Protection = "1; mode=block"
