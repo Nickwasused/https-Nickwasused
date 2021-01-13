@@ -2,10 +2,10 @@
 <html lang="de">
 	<head>
 		<title>Nickwasused</title>
-		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="description" content="Nickwasused´s Website">
 		<meta name="keywords" content="Portfolio, Website">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<link rel="author" href="https://twitter.com/Nickwasused" />
 		<link rel="canonical" href="https://nickwasused.de" />
 		<meta name="twitter:card" content="Nickwasused´s Website">
@@ -31,7 +31,7 @@
 		<meta name="msapplication-config" content="fav/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		<link type="text/css" rel="stylesheet" href="basic.css">
-		<script>document.write('<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">')</script>
+		<script>document.write("<link type='text/css' rel='stylesheet' href='font.css' media='print' onload='this.media='all'''>")</script>
 	</head>
 	<header>
 		<ul>
@@ -123,6 +123,6 @@
 	<footer>
 		<p>&copy; Nickwasused 2020</p>
 		<p>Licence: <a href="LICENCE" target="_blank" rel="noopener noreferrer">here!</a></p>
-		<link type="text/css" rel="stylesheet" href="complete.css">
+		<link type="text/css" rel="stylesheet" href="complete.css" media="print" onload="this.media='all'">
 	</footer>
 </html>
