@@ -4,7 +4,7 @@
 
 html {
 	font-family          : 'Roboto', sans-serif;
-	font-size            : 16px;
+	font-size            : 15px;
 	text-justify         : inter-word;
 }
 
@@ -113,7 +113,7 @@ footer p {
 	padding-top       : 5vh;
 	text-align        : center;
 	color             : white;
-	font-size         : 30px;
+	font-size         : 200%;
 }
 
 .ncontent1 {
@@ -179,20 +179,49 @@ footer p {
 }
 
 .pgp {
-	font-size   : 10px;
+	font-size   : 67.5%;
 	white-space : wrap;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1499px) {
+	p {
+		font-size : 75%;
+	}
+	h1 {
+		font-size : 200%;
+	}
 }
 
 @media only screen and (max-width: 700px) {
 	.ncontent2,
 	.ncontent4 {
-		font-size : 20px;
+		font-size : 130%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.pgp {
+		visibility : hidden;
+		max-height : 0vh;
+	}
+}
+
+@media only screen and (max-height: 640px) {
+	.pgp {
+		visibility : hidden;
+		max-height : 0vh;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	.ncontent4 h1 {
-		font-size : 25px;
+		font-size : 100%;
+	}
+	p {
+		font-size : 100%;
+	}
+	h1 {
+		font-size : 100%;
 	}
 	
 }
@@ -201,6 +230,6 @@ footer p {
 	.ncontent2,
 	.ncontent4,
 	.ncontent4 h1 {
-		font-size : 15px;
+		font-size : 100%;
 	}
 }
