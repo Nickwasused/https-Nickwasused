@@ -1,35 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import lozad from 'lozad';
 import './app.css';
-import crowdin from './images/crowdin.svg';
-import github from './images/github.svg';
-import steam from './images/steam.svg';
-import youtube from './images/youtube.svg';
-
-const AsyncImage = (props) => {
-    const [loadedSrc, setLoadedSrc] = React.useState(null);
-    React.useEffect(() => {
-        setLoadedSrc(null);
-        if (props.src) {
-            const handleLoad = () => {
-                setLoadedSrc(props.src);
-            };
-            const image = new Image();
-            image.addEventListener('load', handleLoad);
-            image.src = props.src;
-            return () => {
-                image.removeEventListener('load', handleLoad);
-            };
-        }
-    }, [props.src]);
-    if (loadedSrc === props.src) {
-        return (
-            <img {...props} alt="async loading"/>
-        );
-    }
-    return null;
-};
 
 function App() {
+  const { observe } = lozad();
+
+  useEffect(() => {
+    observe();
+  }, []);
+
   return (
     <div className="App">
       <div class="ncontent1">
@@ -42,19 +21,19 @@ function App() {
         <h1>My Portfolio</h1>
         <div class="grid2x2">
           <div class="box box1">
-            <AsyncImage src={github} alt="github"/>
+            <img class="lozad" data-src="/images/cat/github.svg" alt="github"></img>
             <a href="https://github.com/Nickwasused" target="_blank" rel="noopener noreferrer"><p>Github | Coding</p></a>
           </div>
           <div class="box box2">
-            <AsyncImage src={youtube} alt="youtube"/>
+          <img class="lozad" data-src="/images/cat/youtube.svg" alt="youtube"></img>
             <a href="https://www.youtube.com/channel/UCsRLiy6MV4udCvbbcKBl5-g" target="_blank" rel="noopener noreferrer"><p>Youtube | Translating</p></a>
           </div>
           <div class="box box3">
-            <AsyncImage src={crowdin} alt="crowdin"/>
+            <img class="lozad" data-src="/images/cat/crowdin.svg" alt="crowdin"></img>
             <a href="https://crowdin.com/profile/nickwasused" target="_blank" rel="noopener noreferrer"><p>Crowdin | Translating</p></a>
           </div>
           <div class="box box4">
-            <AsyncImage src={steam} alt="steam"/>
+            <img class="lozad" data-src="/images/cat/steam.svg" alt="steam"></img>
             <a href="https://github.com/Nickwasused/FreeGamesonSteam" target="_blank" rel="noopener noreferrer"><p>FreeGamesonSteam</p></a>
           </div>
         </div>
@@ -83,7 +62,7 @@ function App() {
           </p>
         </div>
         <p>Twitter: <a href="https://twitter.com/Nickwasused" target="_blank" rel="noopener noreferrer">Nickwasused</a></p>
-        <p>Keybase: <del>Nickwasused</del></p>
+        <p><del>Keybase: Nickwasused</del></p>
 		  </div>
     </div>
   );
