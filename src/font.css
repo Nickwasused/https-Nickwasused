@@ -1,16 +1,10 @@
-@font-face {
-    font-family  : 'Roboto-com';
-    src: url('../webfonts/Roboto-Regular.woff2') format('woff2'),
-		 url('../webfonts/Roboto-Regular.woff') format('woff'),
-		 url('../webfonts/Roboto-Regular.ttf') format('truetype'),
-         url('../webfonts/Roboto-Regular.svg#robotoregular') format('svg');
-    font-weight   : normal;
-    font-style    : normal;
-	font-display  : swap;
-}
-
 html {
-	font-family          : 'Roboto-com', sans-serif !important;
+	font-family: 
+    system-ui,
+    "Segoe UI",
+    "Ubuntu",
+    "Roboto", "Noto Sans", "Droid Sans",
+    sans-serif;
 	font-size            : 16px;
 	text-justify         : inter-word;
 }
